@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://picsum.photos/id/890/536/354");
+  background-size: cover;
+  z-index: -1;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.clock .clock-point {
+  position: absolute;
+  background-color: rgba(4, 3, 3, 0.5);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.clock .clock-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 20px solid #f3f3f3f3;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+.clock .clock-hour, .clock .clock-minute, .clock .clock-second {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock .clock-hour {
+  height: 220px;
+  width: 220px;
+}
+
+.clock .clock-hour::before {
+  content: '';
+  height: 95px;
+  width: 13px;
+  background-color: #4834d4;
+}
+
+.clock .clock-minute {
+  height: 280px;
+  width: 280px;
+}
+
+.clock .clock-minute::before {
+  content: '';
+  height: 128px;
+  width: 8px;
+  background-color: #686de0;
+}
+
+.clock .clock-second {
+  height: 300px;
+  width: 300px;
+}
+
+.clock .clock-second::before {
+  content: '';
+  height: 135px;
+  width: 3px;
+  background-color: #eb4d4b;
+}

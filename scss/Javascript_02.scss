@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("https://picsum.photos/id/890/536/354");
+    background-size: cover;
+    z-index: -1;
+}
+.clock{
+    .clock-point{
+        position: absolute;
+        background-color: rgba(4, 3, 3, 0.5);
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .clock-border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 20px solid #f3f3f3f3;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    .clock-hour,.clock-minute,.clock-second{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .clock-hour{
+        height: 220px;
+        width: 220px;
+        &::before{
+            content: '';
+            height: 95px;
+            width: 13px;
+            background-color: #4834d4;
+        }
+    }
+    .clock-minute{
+        height: 280px;
+        width: 280px;
+        &::before{
+            content: '';
+            height: 128px;
+            width: 8px;
+            background-color: #686de0;
+        }
+    }
+    .clock-second{
+        height: 300px;
+        width: 300px;
+        &::before{
+            content: '';
+            height: 135px;
+            width: 3px;
+            background-color: #eb4d4b;
+        }
+    }
+}
