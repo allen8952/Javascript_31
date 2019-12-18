@@ -94,7 +94,7 @@
 
 .clock .clock-second::before {
   content: '';
-  height: 135px;
+  height: 165px;
   width: 3px;
   background-color: #eb4d4b;
 }
