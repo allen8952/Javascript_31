@@ -1,1 +1,76 @@
-/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+span {
+  display: block;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+  -ms-grid-columns: (2fr)[9];
+      grid-template-columns: repeat(9, 2fr);
+}
+
+.container .box {
+  height: 85px;
+  width: 85px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px 0px;
+      grid-template-rows: 60px 0px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #111;
+  -webkit-transition: all .07s;
+  transition: all .07s;
+}
+
+.container .box ._topCont {
+  font-size: 35px;
+  color: #fff;
+}
+
+.container .box ._bottomCont {
+  font-size: 8px;
+  color: #d3d063;
+  font-weight: 800;
+}
+
+.container .box.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #ffc600;
+  -webkit-box-shadow: 0 0 10px #ffc600;
+          box-shadow: 0 0 10px #ffc600;
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://picsum.photos/id/867/536/354");
+  background-size: cover;
+}
+
+@media (max-width: 1024px), print {
+  .container {
+    -ms-grid-columns: (2fr)[3];
+        grid-template-columns: repeat(3, 2fr);
+  }
+}
