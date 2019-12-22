@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ffaa00;
+  min-height: 100vh;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+form .search {
+  text-align: center;
+  width: 400px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 10px;
+  border: 10px solid #F7F7F7;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  list-style: none;
+}
+
+ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+ul > li:nth-child(odd) {
+  -webkit-transform: perspective(100px) rotateX(-3deg) translateY(2px) scale(1.001);
+          transform: perspective(100px) rotateX(-3deg) translateY(2px) scale(1.001);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#EFEFEF));
+  background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+ul > li:nth-child(even) {
+  -webkit-transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+          transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#EFEFEF));
+  background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}
