@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("https://picsum.photos/id/42/1920/1080") center no-repeat;
+  background-size: cover;
+}
+
+.fas {
+  font-size: 100px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container .logo {
+  position: relative;
+}
+
+.container .logo div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scale(1.6) translateX(-5px);
+          transform: scale(1.6) translateX(-5px);
+}
+
+.container .cafe_frame {
+  margin-top: 80px;
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+}
+
+.container .cafe_frame h1 {
+  text-align: center;
+}
+
+.container .cafe_frame ul {
+  margin: 30px 0;
+  font-weight: 800;
+}
+
+.container .cafe_frame ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .cafe_frame ul label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+}
+
+.container .cafe_frame ul input {
+  display: none;
+}
+
+.container .cafe_frame ul input + label:before {
+  content: '⬜️';
+  margin-right: 10px;
+}
+
+.container .cafe_frame ul input:checked + label:before {
+  content: '🍩';
+}
+
+.container .cafe_frame .add-items {
+  margin-top: 20px;
+}
+
+.container .cafe_frame .add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container .cafe_frame .add-items input[type=submit] {
+  background: #718093;
+}
