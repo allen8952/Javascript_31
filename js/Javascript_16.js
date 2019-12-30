@@ -8,8 +8,8 @@ const mousemoveListener = function (e) {
     let { offsetX: x, offsetY: y } = e ;
 
     if(e.target !== this){
-        x = x + e.target.offsetLeft;
-        y = y + e.target.offsetTop;
+        x = x + e.target.offsetLeft;    //內層靠近左邊距離
+        y = y + e.target.offsetTop;     //內曾靠近上方距離
     }
 
     const xPosition = Math.round((x / width) * shift - (shift / 2));
