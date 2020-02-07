@@ -7,3 +7,4 @@ navigator.geolocation.watchPosition( (data) => {
 }, (err) => {
     console.error(err);
 });
+console.log("okok");
