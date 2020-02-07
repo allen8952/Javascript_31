@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fa0;
+}
+.container{
+    background:white;
+    max-width:150rem;
+    margin: 2rem 10px;
+    border-radius:2px;
+    div.rgb{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            &.red,.green,.blue{
+                display: flex;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .player {
+        position: absolute;
+        top:20px;
+        right: 20px;
+        width:200px;
+    }
+}
+.tkBtn{
+    background:white;
+    max-width:150rem;
+    margin: 2rem auto;
+    border-radius:2px;
+}
+
+.strip {
+    padding:2rem;
+}
+.strip img {
+    width:100px;
+    overflow-x: scroll;
+    padding:0.8rem 0.8rem 2.5rem 0.8rem;
+    box-shadow:0 0 3px rgba(0,0,0,0.2);
+    background:white;
+}
+.strip a:nth-child(3n+1) img { transform: rotate(10deg); }
+.strip a:nth-child(3n+2) img { transform: rotate(-10deg); }
+.strip a:nth-child(3n+3) img { transform: rotate(8deg); }

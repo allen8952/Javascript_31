@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/Javascript_19.css">
+    <title>Javascript_19</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="controls">
+            <div>
+                <button class="tkBtn">Take Picture</button>
+                <button class="reBtn">Red Effect</button>
+                <button class="rsBtn">RGB Split</button>
+                <button class="gsBtn">Green Screen</button>
+            </div>
+            
+            <div class="rgb">
+                <div class="red">
+                    <div>
+                        <label for="rmin">Red&nbsp;Min:</label>
+                        <input type="range" min="0" max="255" name="rmin">
+                    </div>
+                    <div>
+                        <label for="rmax">Red&nbsp;Max:</label>
+                        <input type="range" min="0" max="255" name="rmax">
+                    </div>
+                </div>
+                <div class="green">
+                    <div>
+                        <label for="gmin">Green&nbsp;Min:</label>
+                        <input type="range" min="0" max="255" name="gmin">
+                    </div>
+                    <div>
+                        <label for="gmax">Green&nbsp;Max:</label>
+                        <input type="range" min="0" max="255" name="gmax">
+                    </div>
+                </div>
+                <div class="blue">
+                    <div>
+                        <label for="bmin">Blue&nbsp;Min:</label>
+                        <input type="range" min="0" max="255" name="bmin">
+                    </div>
+                    <div>
+                        <label for="bmax">Blue&nbsp;Max:</label>
+                        <input type="range" min="0" max="255" name="bmax">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <video class="player"></video>
+        <canvas class="photo"></canvas>
+        <div class="strip"></div>
+
+    </div>
+    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+    <script src="../js/Javascript_19.js"></script>
+</body>
+</html>
